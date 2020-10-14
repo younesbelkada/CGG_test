@@ -32,6 +32,10 @@ The data files are in ```.tif``` format. It's a special format since the picture
 ```
 After calling this function the picture will be normalized and the pixel values will have a range betweeb 0 and 1 (that corresponds to the grayscale instensity of the picture). One may also change this input preprocessing pipeline to have a better accuracy.
 
+### Output Data
+
+Since the output masks are also in a ```.tif``` format, we need to change some values. The details are provided in the line 31 at ```data.py```.
+
 ### Network
 
 The network architecture is highly inspired from the U-Net architecture defined in this ![paper](url = https://www.nature.com/articles/s41598-019-53797-9) and defined in the file ```network.py```. One may also change the hyperparameters of this architecture to try to see if we can achieve a better accuracy. I also decided to use the CrossEntropyLoss for this task.
