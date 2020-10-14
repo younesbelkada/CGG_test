@@ -8,6 +8,7 @@ To be able to run the training script, please make sure that you have installed 
 ```
 torch == 1.5.1+cu101
 opencv-python
+scikit-learn
 ```
 Install the required packages using:
 ```
