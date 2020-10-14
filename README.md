@@ -58,11 +58,11 @@ To be able to train and evaluate the model run the following regarding what you 
 
 Just run 
 ```
-python3 main.py train --lr [LEARNING_RATE] --bs [BATCH_SIZE]
+python3 main.py train --lr [LEARNING_RATE] --bs [BATCH_SIZE] --epochs [EPOCHS] --input_dir [INPUT_DIR] --output_dir [MASKS_DIR]
 ```
 
 #### Multi-class classification
 ```
-python3 main.py train --lr [LEARNING_RATE] --bs [BATCH_SIZE] --multi_class True
+python3 main.py train --lr [LEARNING_RATE] --bs [BATCH_SIZE] --epochs [EPOCHS] --input_dir [INPUT_DIR] --output_dir [MASKS_DIR] --multi_class True
 ```
 
