@@ -65,4 +65,6 @@ python3 main.py train --lr [LEARNING_RATE] --bs [BATCH_SIZE] --epochs [EPOCHS] -
 ```
 python3 main.py train --lr [LEARNING_RATE] --bs [BATCH_SIZE] --epochs [EPOCHS] --input_dir [INPUT_DIR] --output_dir [MASKS_DIR] --multi_class True
 ```
+#### Results
 
+After training few epochs, the results are not good for the class 1. The mean IoU at epoch .. is around .. . One thing that could explain this fact is that we do not use weighted loss. The classes are unbalanced and one may use weighted loss for this task.
