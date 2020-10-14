@@ -46,7 +46,7 @@ I decided to add a Sofmax function that is going to be applied through all the o
 
 ### Evaluation metrics
 
-For binary classification, I decided to compute the accuracy per class. This can be done by computing the confusion matrix usning ```sklearn```.  The accuracy per class is defined by : $\frac{nb_{TruePositive}}{nb_{InstanceClass}}$ with $nb_{TruePositive}$ defined as the number of True Positives in the given class and $nb_{InstanceClass}$ defined as the number of the instances of the corresponding class. One can also compute the IoU (Intersection Over Union), but given the very low distribution of the class 1, it could be better to visualize the IoU which makes more sense in our case. The IoU is implemented in this version but not implemented in the multi-class classification
+For binary classification, I decided to compute the accuracy per class. This can be done by computing the confusion matrix usning ```sklearn```.  The accuracy per class is defined by : nb_TruePositive/nb_InstanceClass with nb_TruePositive defined as the number of True Positives in the given class and nb_InstanceClass defined as the number of the instances of the corresponding class. One can also compute the IoU (Intersection Over Union), but given the very low distribution of the class 1, it could be better to visualize the IoU which makes more sense in our case. The IoU is implemented in this version but not implemented in the multi-class classification
 
 For the multi class classification I decided to compute the average accuracy. But one may compute the IoU per class and the mean IoU due to the very high distribution of the class 0 amongst the other classes. 
 
