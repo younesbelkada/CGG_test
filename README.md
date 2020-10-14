@@ -67,4 +67,4 @@ python3 main.py train --lr [LEARNING_RATE] --bs [BATCH_SIZE] --epochs [EPOCHS] -
 ```
 #### Results
 
-After training few epochs, the results are not good for the class 1. The mean IoU at epoch .. is around .. . One thing that could explain this fact is that we do not use weighted loss. The classes are unbalanced and one may use weighted loss for this task.
+After training few epochs, the results are not good for the class 1. The mean IoU at epoch 5 is around 0.0001 . One thing that could explain this fact is that we do not use weighted loss. The classes are unbalanced and one may use weighted loss for this task. One also may tune the learning rate or use the dice loss + crossentropy loss for this task.
